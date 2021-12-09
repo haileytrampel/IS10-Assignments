@@ -1,0 +1,82 @@
+Police Database Quiz Homework. Please reference the data model for police department in the Database Assignment
+on CourseWeb titled police_departments_model.gif. Type your answers into this .txt document (use any text editor)  
+and submit the file zipped with your database file via CourseWeb by Oct 25th. 20 pts
+
+Possible answers for Part 1:
+A. One to Many
+B. Many to Many
+C. One to One
+D. Many to One
+
+Part 1:
+
+Q1 (2 pts) What is the relationship between the People table and the Incidents tables?
+Answer: B. Many to Many
+
+
+Q2 (2pts) What is the relationship between Incidents and Officers tables.
+Answer: B. Many to Many
+
+
+Q3 (2pts) What is the relationship bewtween Ranks and Officers tables?
+Answer: A. One to Many
+
+
+Q4 (2pts) What is the relationship bewtween Departments and Officers tables?
+Answer: A. One to Many
+
+
+
+Part 2 Answer accordingly:
+
+Q5 (2pts) What is the People_in_Incidents table used for. Choose the best answer by typing an X.
+
+ _____ It is a table for holding primary keys of other tables
+ X It is a mandatory table in a M:N relationship where the primary keys of two other tables are used as foreign keys
+       to identify  a row. 
+ ______It is a junction table in a 1:M relationship where only foreign keys are allowed to be used.
+ ______It is a junction table where only primary keys are allowed to be used.
+
+
+Q6 (2pts)    
+
+Y or N N Can an officer hold more than one rank?
+
+
+Q7 (2pts) 
+
+Y or N N Would this SQL statement give the names of all the people who have been involved in an incident?
+
+   SELECT People.person_id, People_in_Incidents.person_id 
+   FROM People_in_Incidents 
+   WHERE People.person_id = People_in_Incidents.person_id;
+   
+   
+Q8 (2 pts)
+
+Y or N Y Would this SQL statement give the result of the officer ID and rank description of the officers?
+
+
+   SELECT officer_id, Ranks.rank_description 
+   FROM Officers INNER JOIN Ranks ON
+   Officers.rank_code = Ranks.rank_code
+   
+Q9 (2pts)
+How would a person use the last name, date of birth and the address of a person to determine 
+whether he/she had been involved in an incident?
+
+_________ Use these attributes as primary keys when searching.
+_________ Search the People_in_Incidents table using an INNER JOIN to find the  answer.
+_________ Search the People table and in the WHERE condition use a conditional to find person_id
+_________ It can't be done
+X None of the above are complete answers
+
+Q10 (2pt)
+
+Which table in the model does not have a primary key field?
+Answer: Associates, as well as the junction tables.
+
+
+
+   
+ 

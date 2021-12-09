@@ -1,0 +1,41 @@
+Microsoft Access Database Project    Total Points (20)
+Create a Microsoft Access database that models a corporate environment with employees, projects and departments.
+You must have at least these three entities but you may create more if it is warranted.
+
+The entities are related as follows:
+
+
+An employee can only work in one department.
+A department can have many employees
+
+A project belongs to one department
+A department can have many projects
+
+For each table add at least three rows and use made-up sensible data.
+
+
+Part of the assignment is to determine which attributes should be used for each table along with the appropriate 
+data types. Look at the following queries that will help you determine what attributes to create.
+Also, create other attributes that would make sense in this corporate environment.
+
+
+
+The following queries need to be created and saved with following format: Q1Employees working project. The next query 
+would be saved as Q2Hours on project by employee. This way the queries will be ordered from Q1 to Q5:
+
+Q1) List all of the employees.
+Q2) Find a particular employee by name
+Q3) List the departments that have budgets greater than $50,000
+Q4) List the projects ordered by Start Date
+Q5) List all projects that are no longer active.
+
+
+
+After you create the database zip your file along with the police quiz and send in via Courseweb.
+Do not e-mail your file. Do not print out your file. Do not slip it under my door:)
+
+Grading:
+Create tables and appropriate attributes (4pts)
+Create primary keys, foreign keys (4pts)
+Draw relationships between tables (2pts)
+Write queries that accurately execute. (10pts)
